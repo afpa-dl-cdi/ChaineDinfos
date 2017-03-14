@@ -6,8 +6,16 @@ using System.Threading.Tasks;
 
 namespace ChaineDinfos
 {
+    /// <summary>
+    /// Classe abstraite permettant de définir la fonction générique du journaliste
+    /// </summary>
     abstract class Journaliste
     {
+        /// <summary>
+        /// Titre de la chaine
+        /// </summary>
+        protected const string chaineTV = "RVNews";
+        
         /* ---------------------------------------
          *            ACCESSEURS                   |
          *---------------------------------------- */
@@ -29,6 +37,36 @@ namespace ChaineDinfos
         /// </summary>
         public string Theme { get; set; }
 
+        /* ---------------------------------------
+        *            CONSTRUCTEURS                 |
+        *---------------------------------------- */
+        /// <summary>
+        /// constructeur générique
+        /// </summary>
+        public Journaliste()
+        {
+            // ce constructeur pour l'instant n'exécute rien
+        }
+
+        /// <summary>
+        /// constructeur permettant de créer un journaliste avec son prénom
+        /// </summary>
+        /// <param name="prenom"></param>
+        public Journaliste (string prenom)
+        {
+            Prenom = prenom;
+        }
+
+        /// <summary>
+        /// constructeur permettant de créer un journaliste avec son nom et prénom 
+        /// </summary>
+        /// <param name="prenom"></param>
+        /// <param name="nom"></param>
+        public Journaliste (string prenom, string nom)
+        {
+            Prenom = nom;
+            Nom = nom;
+        }
 
 
         /* ---------------------------------------

@@ -1,5 +1,8 @@
 ﻿namespace ChaineDinfos
 {
+    /// <summary>
+    /// Classe définissant un reportage 
+    /// </summary>
     class Reportage
     {
         /// <summary>
