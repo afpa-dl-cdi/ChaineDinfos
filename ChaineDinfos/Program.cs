@@ -10,8 +10,8 @@ namespace ChaineDinfos
     {
         static void Main(string[] args)
         {
-            Envoye envoye = new Envoye();
-            envoye.Prenom = "Jack";
+            Envoye envoye = new Envoye("Jean");
+
             envoye.Nom = "Luc";
             envoye.Theme = "Sport";
             envoye.PosteDeLEnvoye = Poste.cameraman;
