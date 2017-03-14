@@ -8,6 +8,10 @@ namespace ChaineDinfos
 {
     abstract class Journaliste
     {
+        /// <summary>
+        /// Titre de la chaine
+        /// </summary>
+        protected const string chaineTV = "RVNews";
         /* ---------------------------------------
          *            ACCESSEURS                   |
          *---------------------------------------- */
@@ -29,7 +33,25 @@ namespace ChaineDinfos
         /// </summary>
         public string Theme { get; set; }
 
+        /* -----------------------------------------
+         *            Constructeur                 |
+         *---------------------------------------- */
 
+            public Journaliste()
+        {
+
+        }
+
+        public Journaliste(string prenom)
+        {
+            Prenom = prenom;
+        }
+
+        public Journaliste(string prenom, string nom)
+        {
+            Prenom = nom;
+            Nom = nom;
+        }
 
         /* ---------------------------------------
          *            METHODES                   |
