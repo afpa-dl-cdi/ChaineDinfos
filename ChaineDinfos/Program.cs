@@ -16,6 +16,7 @@ namespace ChaineDinfos
             envoye.Theme = "Sport";
             envoye.PosteDeLEnvoye = Poste.cameraman;
             Reportage finalDePetanque = envoye.Filmer();
+            Console.WriteLine("Common on Luc!");
         }                 
     }
 }
