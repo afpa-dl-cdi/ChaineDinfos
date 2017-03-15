@@ -18,8 +18,6 @@ namespace ChaineDinfos
             Reportage finalDePetanque = envoye.Rediger("Mon reportage", DateTime.Now, "Mon titre");
              
             Reportage finalDePetanque = envoye.Filmer();
-            Console.WriteLine("common luc !");
-
         }                 
     }
 }
