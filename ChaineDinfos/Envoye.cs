@@ -13,6 +13,23 @@ namespace ChaineDinfos
 
         }
 
+        public Envoye (int jourDeLaMission = 10)
+        {
+            Console.WriteLine("Nombres de jours de la mission : {0}", jourDeLaMission);
+        }
+
+        /// <summary>
+        /// Constructeur pour ilustrer un appel par étiquette
+        /// </summary>
+        /// <param name="departementDeLaMission"></param>
+        /// <param name="jourDeLaMission"></param>
+
+        public Envoye (string departementDeLaMission, int jourDeLaMission = 10)
+        {
+            Console.WriteLine("Département de la mission : {0}", departementDeLaMission);
+            Console.WriteLine("Nombres de jours de la mission : {0}", jourDeLaMission);
+        }
+
         public Envoye (Reportage mission)
         {
 

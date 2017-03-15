@@ -58,6 +58,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Accroche.cs" />
     <Compile Include="Envoye.cs" />
     <Compile Include="Journaliste.cs" />
     <Compile Include="Poste.cs" />

@@ -34,7 +34,7 @@ namespace ChaineDinfos
         public string Theme { get; set; }
 
         /* -----------------------------------------
-         *            Constructeur                 |
+         *            Constructeurs                |
          *---------------------------------------- */
 
             public Journaliste()
