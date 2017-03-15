@@ -16,8 +16,16 @@ namespace ChaineDinfos
             envoye.Theme = "Sport";
             envoye.PosteDeLEnvoye = Poste.cameraman;
             Reportage finalDePetanque = envoye.Rediger("Mon reportage", DateTime.Now, "Mon titre");
-             
-            Reportage finalDePetanque = envoye.Filmer();
+
+            Accroche.bonjour();                     //appel d'une classe et d'une méthode statique 
+
+            Envoye samSoungue = new Envoye(); 
+            Redacteur ppd = new Redacteur();
+            Redacteur dp = new Redacteur();
+            Redacteur cc = new Redacteur();
+
+            Console.WriteLine("nombre de journaliste : {0}", Journaliste.count); // appel d'une variable statique (d'une classe non statique)
         }                 
     }
 }
+ 
