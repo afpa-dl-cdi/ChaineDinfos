@@ -15,6 +15,10 @@ namespace ChaineDinfos
             envoye.Theme = "Sport";
             envoye.PosteDeLEnvoye = Poste.cameraman;
             Reportage finalDePetanque = envoye.Filmer();
+            Envoye e = new Envoye(joursDeLaMission: 20, departementDeLaMission: "sport");
+
+            Accroche.bonjour(); // appelle d'une classe et sa méthode statique
+
         }                 
     }
 }

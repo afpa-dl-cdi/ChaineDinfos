@@ -12,6 +12,8 @@ namespace ChaineDinfos
     /// </summary>
     sealed class Envoye : Journaliste
     {
+
+
         /// <summary>
         /// constructeur générique
         /// </summary>
@@ -28,6 +30,26 @@ namespace ChaineDinfos
         public Envoye (Reportage mission)
         {
             // A définir
+        }
+
+        /// <summary>
+        /// Constructeur avec valeur par défaut
+        /// </summary>
+        /// <param name="joursDeLaMission"></param>
+        public Envoye (int joursDeLaMission = 10)
+        {
+            Console.WriteLine("nombre de jours de la mission : {0}", joursDeLaMission);
+        }
+
+        /// <summary>
+        /// Constructeur pour illustrer un appel par "étiquette"
+        /// </summary>
+        /// <param name="departementDeLaMission"></param>
+        /// <param name="joursDeLaMission"></param>
+        public Envoye(string departementDeLaMission, int joursDeLaMission = 10)
+        {
+            Console.WriteLine("département de la mission : {0}", departementDeLaMission);
+            Console.WriteLine("nombre de jours de la mission : {0}", joursDeLaMission);
         }
 
         /// <summary>
