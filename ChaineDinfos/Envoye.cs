@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ChaineDinfos
 {
-    class Envoye : Journaliste
+    sealed class Envoye : Journaliste
     {
         /// <summary>
         /// Zone d'affectation
@@ -35,7 +35,7 @@ namespace ChaineDinfos
             return reportage;
         }
 
-
+         
 
     }
 }

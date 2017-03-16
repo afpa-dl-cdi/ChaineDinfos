@@ -44,6 +44,15 @@ namespace ChaineDinfos
         public abstract Reportage Rediger(string texteduSujet, DateTime dateDuSujet, string titreDuSujet);
 
 
+        /* ---------------------------------------
+         *            CONSTRUCTEURS                   |
+         *---------------------------------------- */
+
+        public Journaliste(string nom, string prenom)
+        {
+            Nom = nom;
+            Prenom = prenom;
+        }
 
     }
 }
