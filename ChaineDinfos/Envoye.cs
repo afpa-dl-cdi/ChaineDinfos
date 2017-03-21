@@ -8,7 +8,7 @@ namespace ChaineDinfos
 {
     /// <summary>
     /// un envoyé est un journaliste de terrain.
-    /// Aucune autre classe ne pourra héritée de cette classe
+    /// Aucune autre classe ne pourra hériter de cette classe
     /// </summary>
     sealed class Envoye : Journaliste
     {
