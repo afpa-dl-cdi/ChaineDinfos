@@ -8,7 +8,10 @@ namespace ChaineDinfos
 {
     static class Accroche
     {
-
+        /// <summary>
+        /// Illustration de l'usage d'une méthode statique
+        /// </summary>
+        /// <returns></returns>
         public static string bonjour()
         {
             return "bonjour";
