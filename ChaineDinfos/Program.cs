@@ -24,7 +24,7 @@ namespace ChaineDinfos
             Redacteur dp = new Redacteur();
             Redacteur cc = new Redacteur();
 
-            Console.WriteLine("nombre de journaliste : {0}", Journaliste.count); // appel d'une variable statique (d'une classe non statique)
+            Console.WriteLine("nombre de journaliste : {0}", Journaliste.nombreDeJournalisteCrees()); // appel d'une variable statique (d'une classe non statique)
 
         }                 
     }

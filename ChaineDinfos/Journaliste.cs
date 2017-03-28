@@ -9,7 +9,7 @@ namespace ChaineDinfos
     /// <summary>
     /// Classe abstraite permettant de définir la fonction générique du journaliste
     /// </summary>
-    abstract class Journaliste
+    abstract class Journaliste 
     {
         /* ---------------------------------------
          *            VARIABLES                    |
@@ -17,7 +17,16 @@ namespace ChaineDinfos
          /// <summary>
          /// Compteur du nombre d'instanciation de la classe journaliste
          /// </summary>
-        static public int count;
+        static private int _count;
+
+        /// <summary>
+        /// retourner le nombre de journalistes instanciés
+        /// </summary>
+        /// <returns></returns>
+        public static int nombreDeJournalisteCrees()
+        {
+            return _count;
+        }
 
         /// <summary>
         /// Titre de la chaine
@@ -54,7 +63,7 @@ namespace ChaineDinfos
         public Journaliste()
         {
             // ce constructeur pour l'instant n'exécute rien
-            count++;
+            _count++;
         }
 
         /// <summary>
